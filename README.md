@@ -13,9 +13,9 @@ Sitio estático académico para practicar formularios, navegación y estilos ada
 
 ## Sitio desplegado
 
-`https://carolinalohrmann.github.io/web2_remoto_practica/`
+[https://carolinalohrmann.github.io/web2_remoto_practica/](https://carolinalohrmann.github.io/web2_remoto_practica/)
 
-Esta es la URL prevista para GitHub Pages. Confirma que quede activa en **Settings → Pages** después del primer despliegue.
+El sitio está publicado con GitHub Pages.
 
 ## Autora
 
