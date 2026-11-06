@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Sitio estático académico para practicar formularios, navegación y estilos adaptables. Incluye una portada, una pantalla de acceso de demostración, un formulario que no guarda ni transmite los datos y un listado vacío. No es una aplicación clínica ni contiene base de datos.
+Prueba pequeña para ver si el readme se edito .. estoy usando un borma de la unidad 1 de programcion web 2 y eleji git hud 
 
 ## Tecnologías
 
