@@ -2,9 +2,10 @@
 
 ## Descripción
 
-Sitiopara practicar formularios, navegación y estilos adaptables.
+Sitio estático académico para practicar formularios, navegación y estilos adaptables. Incluye una portada, una pantalla de acceso de demostración, un formulario que no guarda ni transmite los datos y un listado vacío. No es una aplicación clínica ni contiene base de datos.
 
 ## Tecnologías
+
 - HTML5
 - CSS3
 - Git y GitHub
@@ -14,6 +15,7 @@ Sitiopara practicar formularios, navegación y estilos adaptables.
 
 `https://carolinalohrmann.github.io/web2_remoto_practica/`
 
+Esta es la URL prevista para GitHub Pages. Confirma que quede activa en **Settings → Pages** después del primer despliegue.
 
 ## Autora
 
