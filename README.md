@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Prueba pequeña para ver si el readme se edito .. estoy usando un borma de la unidad 1 de programcion web 2 y eleji git hud 
+Prueba pequeña para ver si el readme se edito .. estoy usando un codigo de la unidad 1 de programación web 2 y eleji git hud (Se enviaron las capturas originales en la tarea por que en el word se veían demasiado borrosas 
 
 ## Tecnologías
 
