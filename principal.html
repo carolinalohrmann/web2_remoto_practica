@@ -1,53 +1,67 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Formulario demostrativo para registro de pacientes.">
-  <title>Nuevo registro | Registro Salud</title>
-  <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-  <header class="topbar shell"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">+</span><span><small>Proyecto académico</small>Registro Salud</span></a></header>
-  <main class="shell">
-    <nav class="nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="principal.html" aria-current="page">Nuevo registro</a><a href="registros.html">Registros</a></nav>
-    <div class="form-layout">
-      <section class="panel">
-        <p class="eyebrow">Formulario de demostración</p>
-        <h1>Registro de pacientes</h1>
-        <p class="lead">Completa los campos para recorrer la interfaz. No ingreses información real.</p>
-        <form onsubmit="event.preventDefault(); alert('Demostración completada. Los datos no se guardaron ni se enviaron.'); this.reset();">
-          <fieldset>
-            <legend>Datos personales</legend>
-            <div class="field-grid">
-              <div class="field"><label for="nombre">Nombre</label><input type="text" name="nombre" id="nombre" required placeholder="Nombre de ejemplo" autocomplete="off"></div>
-              <div class="field"><label for="apellidos">Apellidos</label><input type="text" name="apellidos" id="apellidos" required placeholder="Apellido de ejemplo" autocomplete="off"></div>
-              <div class="field full"><span class="field-label">Sexo</span><div class="choices"><label><input type="radio" name="sexo" value="mujer"> Mujer</label><label><input type="radio" name="sexo" value="hombre"> Hombre</label><label><input type="radio" name="sexo" value="otro"> Prefiero no indicarlo</label></div></div>
-              <div class="field"><label for="fechaNac">Fecha de nacimiento</label><input type="date" name="fechaNac" id="fechaNac" required></div>
-              <div class="field"><label for="direccion">Dirección (opcional)</label><textarea name="direccion" id="direccion" placeholder="No ingreses una dirección real" autocomplete="off"></textarea></div>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>Datos de salud de ejemplo</legend>
-            <div class="field-grid">
-              <div class="field full"><span class="field-label">¿Tuvo contacto con alguien enfermo?</span><div class="choices"><label><input type="radio" name="contactoEnfermo" value="si"> Sí</label><label><input type="radio" name="contactoEnfermo" value="no"> No</label><label><input type="radio" name="contactoEnfermo" value="posiblemente"> Posiblemente</label></div></div>
-              <div class="field full"><span class="field-label">¿Estuvo enfermo antes?</span><div class="choices"><label><input type="radio" name="enfAnt" value="si"> Sí</label><label><input type="radio" name="enfAnt" value="no"> No</label></div></div>
-              <div class="field full"><span class="field-label">Enfermedades de base (opcional)</span><div class="choices"><label><input type="checkbox" name="diabetes"> Diabetes</label><label><input type="checkbox" name="renal"> Enfermedad renal</label><label><input type="checkbox" name="hepatica"> Enfermedad hepática</label><label><input type="checkbox" name="otro"> Otra</label></div></div>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>Datos de la prueba</legend>
-            <div class="field-grid">
-              <div class="field"><label for="temperatura">Temperatura</label><input type="text" inputmode="decimal" name="temperatura" id="temperatura" required placeholder="Ej. 36,5 °C"></div>
-              <div class="field"><label for="tipoExamen">Tipo de examen</label><select name="tipoExamen" id="tipoExamen"><option value="isopado">Hisopado</option><option value="molecular">Prueba molecular</option><option value="antigenos">Prueba de antígenos</option></select></div>
-            </div>
-          </fieldset>
-          <div class="actions"><button type="submit">Probar formulario</button><button class="button secondary" type="reset">Limpiar</button></div>
+    <div id="formRegistro">
+        <h1>Registro Pacientes</h1>
+
+        <form action="registros.html" method="get">
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required placeholder="Escriba su nombre">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos" required placeholder="Escriba su apellido completo">
+                <label for="sexo">Sexo</label>
+                    <input type="radio" name="sexo" id="hombre" value="hombre">Hombre
+                    <input type="radio" name="sexo" id="mujer" value="mujer">Mujer
+                <label for="fechaNac">Fecha Nacimiento</label>
+                <input type="date" name="fechaNac" id="fechaNac" required>
+                <label for="direccion">Direccion</label>
+                <textarea name="direccion" id="direccion" placeholder="Escriba su direccion"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Datos Extra
+                </legend>
+
+                <label for="contEnfer">Contactos con alguien enfermo</label>
+                <input type="radio" name="contactoEnfermo" id="si" value="si">Si
+                <input type="radio" name="contactoEnfermo" id="no" value="no">No
+                <input type="radio" name="contactoEnfermo" id="posiblemente" value="posiblemente">Posiblemente
+                <label for="">Estuvo enfermo antes</label>
+                <input type="radio" name="enfAnt" id="siEnfermo" value="si">Si
+                <input type="radio" name="enfAnt" id="noEnfermo" value="no">No
+
+                <label for="">Enfermedades de base</label>
+                <input type="checkbox" name="diabetes" id="diabetes" value="diabetes">Diabetes
+                <input type="checkbox" name="renal" id="renal" value="renal">Enfermedad Renal
+                <input type="checkbox" name="hepatica" id="hepatica" value="hepatica">Enfermedad Hepatica
+                <input type="checkbox" name="otro" id="otro" value="otro">Otro
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Datos Generados
+                </legend>
+                    <label for="temperatura">Temperatura</label>
+                    <input type="text" name="temperatura" id="temperatura" required placeholder="Escriba la temperatura">
+                    <label for="tipoExamen">Tipo Examen</label>
+                    <select name="tipoExamen" id="tipoExamen">
+                        <option value="isopado">Isopado</option>
+                        <option value="prueba_molecular">Prueba molecular</option>
+                        <option value="prueba_antigenos">Prueba de antigenos</option>
+                    </select>
+            </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Cancelar">
         </form>
-      </section>
-      <aside class="panel"><p class="eyebrow">Aviso</p><h2>Solo para práctica</h2><p>Este sitio estático no tiene servidor ni base de datos. Al enviar, los campos se limpian y no se conserva ni se transmite ningún dato.</p><p>Autora: <strong>Carolina Lohrmann</strong></p></aside>
     </div>
-  </main>
-  <footer class="footer shell">Carolina Lohrmann · Práctica de desarrollo web</footer>
 </body>
 </html>

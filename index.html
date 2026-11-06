@@ -1,28 +1,24 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Proyecto académico Registro Salud, creado por Carolina Lohrmann.">
-  <title>Registro Salud | Carolina Lohrmann</title>
-  <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-  <header class="topbar shell"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">+</span><span><small>Proyecto académico</small>Registro Salud</span></a></header>
-  <main class="shell">
-    <nav class="nav" aria-label="Navegación principal"><a href="index.html" aria-current="page">Inicio</a><a href="principal.html">Nuevo registro</a><a href="registros.html">Registros</a></nav>
-    <section class="hero">
-      <p class="eyebrow">Desarrollo web · HTML y CSS</p>
-      <h1>Un prototipo claro para practicar formularios</h1>
-      <p class="lead">Registro Salud es un sitio estático de demostración. Reúne una pantalla de acceso, un formulario y un listado vacío para practicar estructura, estilos y navegación web.</p>
-      <div class="actions"><a class="button" href="principal.html">Explorar el formulario</a><a class="button secondary" href="registros.html">Ver registros</a></div>
-      <div class="card-grid">
-        <article class="card"><span class="card-icon" aria-hidden="true">01</span><h2>Captura de prueba</h2><p>Campos HTML semánticos con etiquetas, opciones y validación básica del navegador.</p></article>
-        <article class="card"><span class="card-icon" aria-hidden="true">02</span><h2>Diseño adaptable</h2><p>Estilos CSS que ajustan tarjetas, formularios y navegación a pantallas pequeñas.</p></article>
-        <article class="card"><span class="card-icon" aria-hidden="true">03</span><h2>Datos protegidos</h2><p>No hay almacenamiento: la demostración no guarda ni envía información del formulario.</p></article>
-      </div>
-    </section>
-  </main>
-  <footer class="footer shell">Autora: Carolina Lohrmann · Proyecto académico · 2026</footer>
+    <div id="cajalogin">
+        <h1 class="titulo1">Ingreso Sistema de Registro</h1>
+        <img id="imgLogin" src="img/yimiao3.webp" alt="" width="150" height="150">
+
+        <!-- formulario para envio -->
+        <form action="principal.html" method="get">
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" id="usuario">
+            <label for="passw">Contraseña</label>
+            <input type="password" name="passw" id="passw">
+            <input type="submit" value="Ingresar">
+        </form>
+    </div>
 </body>
 </html>
