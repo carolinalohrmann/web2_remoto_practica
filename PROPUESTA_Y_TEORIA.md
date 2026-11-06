@@ -46,6 +46,7 @@ GitHub Pages publica archivos web estáticos (HTML, CSS, JavaScript e imágenes)
 - **Rama estable:** `main`, con la versión que se publicará.
 - **Rama de mejora:** `feature/despliegue`, para agregar `README.md` y documentar el sitio.
 - **Integración:** abrir un Pull Request de `feature/despliegue` a `main`, describir el cambio, revisar los archivos, aprobar e integrar.
+- **Revisión:** pedir a una compañera, compañero o docente que revise y apruebe el PR. GitHub no permite que quien abrió el Pull Request apruebe su propio PR.
 - **Despliegue:** seleccionar **Settings → Pages → Build and deployment → GitHub Actions**. El workflow `.github/workflows/pages.yml` publica el contenido de `main`.
 - **Mantenimiento:** realizar cada mejora en una rama nueva, sincronizarla con `origin`, revisar el PR e integrar antes de publicar.
 
